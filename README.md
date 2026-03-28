@@ -118,7 +118,7 @@ If you want to help:
 
 ## 📜 License
 
-MIT License
+GPL v3 License
 
 ---
 
