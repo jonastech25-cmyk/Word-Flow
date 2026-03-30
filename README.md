@@ -1,52 +1,52 @@
-# Word-Flow
 # WordFlow
 
 **WordFlow** is an experimental open-source editor that rethinks how documents are created, structured, and stored.
 
-Instead of hiding the internal structure, WordFlow exposes it in real time through a JSON-based format (`.wfd`), giving full control over content and layout.
+It is usable directly from the web and runs as a lightweight, browser-based application.
+
+👉 Live demo: **https://jonastech25-cmyk.github.io/Word-Flow/**
+
+Instead of hiding structure behind a visual-only editor, WordFlow exposes the full document model in real time using a custom JSON-based format (`.wfd`), giving users full control over content, layout, and transformations.
 
 ---
 
-## ✨ Features
+## ✨ Core Concept
 
-* **Live JSON Structure**
-  See and understand your document structure while writing.
+WordFlow treats documents as **structured data, not plain text**.
 
-* **Custom File Format (.wfd)**
-  A structured, extensible format designed for flexibility and future integrations.
+Every change in the editor directly modifies the underlying JSON representation, making the document fully transparent and programmable.
 
-* **Real-Time Editing**
-  Write content and instantly reflect changes in the underlying data.
+---
 
-* **Export Options**
-  Export your documents to:
+## 🚀 Current Features (Implemented)
+
+* 🌐 **Web-based editor**
+  Fully usable in the browser, no installation required.
+
+* 🔄 **Live JSON structure view**
+  Real-time synchronization between editor and `.wfd` document model.
+
+* 🧱 **Block-based document system**
+  Content is organized into structured blocks (heading, paragraph, etc.).
+
+* 📄 **Custom file format (.wfd)**
+  A lightweight JSON-based format designed for extensibility.
+
+* 📤 **Export system**
+  Export documents to:
 
   * HTML
   * Markdown
   * Plain text
 
-* **Lightweight & Fast**
-  Minimal overhead, focused on performance and clarity.
+* ⚡ **Lightweight architecture**
+  Minimal overhead, focused on speed and simplicity.
 
 ---
 
-## 🧠 Philosophy
+## 🧪 Example `.wfd` Structure
 
-WordFlow is built around a simple idea:
-
-> Your document is not just text — it's structured data.
-
-Most editors hide this structure. WordFlow makes it visible and editable, enabling:
-
-* Better understanding of content
-* Easier transformations and exports
-* Developer-friendly workflows
-
----
-
-## 📄 Example `.wfd` Structure
-
-```json
+```json id="n9p1ka"
 {
   "version": 1,
   "type": "wfd",
@@ -67,40 +67,61 @@ Most editors hide this structure. WordFlow makes it visible and editable, enabli
 
 ---
 
-## 🚀 Getting Started
+## 🧠 Philosophy
 
-### Run locally
+Most modern editors prioritize UI abstraction and hide internal structure.
 
-```bash
-git clone https://github.com/YOUR_USERNAME/Word-Flow.git
-cd Word-Flow
-```
+WordFlow does the opposite:
 
-Then open the project in your browser or start your dev server (depending on your setup).
+* The document structure is always visible
+* The user has full control over the data model
+* Content becomes programmable and transformable
+
+---
+
+## 🧩 Planned Features (Roadmap)
+
+* 🧩 **Plugin system**
+  Extend editor functionality with custom blocks and tools.
+
+* 🤝 **Collaboration mode**
+  Real-time multi-user editing.
+
+* 🧱 **Advanced block types**
+  Tables, embeds, media blocks, and custom components.
+
+* 📥 **Import system**
+  Support for Markdown, HTML, and external formats.
+
+* 🎨 **UI/UX redesign**
+  More polished and user-friendly interface.
+
+---
+
+## 🤖 AI Integration (Planned / Experimental)
+
+A future goal of WordFlow is to integrate AI capabilities directly into the editor.
+
+Possible directions include:
+
+* Local LLM support (privacy-focused, offline usage)
+* AI-assisted writing inside blocks
+* Automatic structuring of raw text into `.wfd` format
+* Context-aware suggestions based on document structure
+
+The idea is to allow WordFlow to run with **local models (LLMs)** for full offline AI-assisted editing.
 
 ---
 
 ## 🧪 Status
 
-⚠️ **This is an experimental project**
+⚠️ This project is currently in **early experimental stage**
 
 Expect:
 
-* bugs
 * breaking changes
 * incomplete features
-
-The goal is exploration, not stability (yet).
-
----
-
-## 💡 Roadmap (Ideas)
-
-* Improved UI/UX
-* Plugin system
-* Collaboration features
-* Advanced formatting blocks
-* Import from other formats
+* active development and redesigns
 
 ---
 
@@ -108,17 +129,17 @@ The goal is exploration, not stability (yet).
 
 Contributions, ideas, and feedback are welcome.
 
-If you want to help:
+You can contribute by:
 
-* Open an issue
-* Suggest improvements
-* Submit a pull request
+* Opening issues
+* Suggesting features
+* Submitting pull requests
 
 ---
 
 ## 📜 License
 
-GPL v3 License
+This project is licensed under the **GNU GPL v3**.
 
 ---
 
@@ -126,4 +147,4 @@ GPL v3 License
 
 Because traditional editors treat documents as text.
 
-WordFlow treats them as **data you control**.
+WordFlow treats them as **structured, interactive data**.
